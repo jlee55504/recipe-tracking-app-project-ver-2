@@ -62,7 +62,7 @@ function RecipeCreate({ getRecipes, areThereOddNumberRecipes }) {
     const handleSubmit = event => {
         event.preventDefault();
         setFormData({ ...initialFormState });
-        getRecipes(formData)
+        getRecipes(formData);
     }
 
     /* The "styling" 'variable' is 'declared' to hold the 'tr' JSX 'element's' 'backgroundColor'. */
@@ -81,10 +81,8 @@ function RecipeCreate({ getRecipes, areThereOddNumberRecipes }) {
           styling = {
             backgroundColor: "#fff0c7",
           }
-        }
-      
+        }     
     }
-
 
   /* A 'form' JSX 'element' with a 'value' of "create" for its 'name' attribute 
   and the "handleSubmit" 'function' for its 'onSubmit' 'event listener' is 
@@ -139,7 +137,7 @@ function RecipeCreate({ getRecipes, areThereOddNumberRecipes }) {
 
 /* The "styleBackground" ''function' is 'called' with the "areThereOddNumberRecipes" 
 'parameter/variable' as an 'argument'. */
-styleBackground(areThereOddNumberRecipes)
+styleBackground(areThereOddNumberRecipes);
 
   return (
     <form name="create" onSubmit={handleSubmit}>

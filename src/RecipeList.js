@@ -25,7 +25,7 @@ function RecipeList({ recipes, deleteRecipe }) {
  "deleteRecipes" 'function' with the value of the "index" 'parameter' using the 
  'target' and 'value' 'methods'. */
   const getIndexToDelete = index => {
-    deleteRecipe(index.target.value)
+    deleteRecipe(index.target.value);
   }
 
     /* The "createRecipeTableData" 'variable' uses the '.map' 'method' on the 
@@ -49,10 +49,6 @@ contain 'div' JSX 'elements' inside. The third 'td' JSX 'element' contains a
         its 'text'. */
         const createRecipeTableData = recipes.map((recipe, index) => <tr key={index}><td><div>{recipe.name}</div></td><td><div>{recipe.cuisine}</div></td><td><img src={recipe.photo} alt={recipe.name} /></td>
     <td><div className="ingredients-div">{recipe.ingredients}</div></td><td><div className="preparation-div">{recipe.preparation}</div></td><td><button type="button" name="delete" onClick={getIndexToDelete} value={index}>Delete</button></td> </tr>);
-
-
-
-
 
   /* A 'div' JSX 'element' with the 'value' of "recipe-list" for its 'className' 
   'attribute' with a 'table' JSX 'element' with one 'tr' inside containing six
