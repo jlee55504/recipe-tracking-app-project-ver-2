@@ -1,9 +1,0 @@
-.ingredients-div, .preparation-div {
-    overflow-y: auto;
-    width: 28.1rem;
-    height: 4rem;
-}
-
-tr:nth-child(odd) {
-    background-color: #fff0c7;
-}
